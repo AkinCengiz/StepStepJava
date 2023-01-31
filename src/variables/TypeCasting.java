@@ -2,7 +2,6 @@ package variables;
 
 public class TypeCasting {
     public static void main(String[] args) {
-
         byte byteNumber1 = Byte.MAX_VALUE;
         short shortNumber1 = byteNumber1;
         short shortNumber2 = Short.MAX_VALUE;
@@ -11,7 +10,6 @@ public class TypeCasting {
         long longNumber1 = intNumber2;
         float floatNumber1 = longNumber1;
         double doubleNumber = longNumber1;
-
         System.out.println("byteNumber\t: "+ byteNumber1);
         System.out.println("shortNumber1\t: "+ shortNumber1);
         System.out.println("shortNumber2\t: "+ shortNumber2);
