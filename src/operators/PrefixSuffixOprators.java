@@ -49,6 +49,12 @@ public class PrefixSuffixOprators {
         sonuc /= sayi1; // sonuc = sonuc / sayi1;
         System.out.println("sonuc /= sayi1 : " + sonuc);
 
+        System.out.println("*****************************************");
+        double ondalikliSayi=6.50;
+        double rslt = 0;
+        rslt++;
+        ondalikliSayi *= rslt;
+        System.out.println("Sonuç : " + ondalikliSayi);
 
     }
 }
