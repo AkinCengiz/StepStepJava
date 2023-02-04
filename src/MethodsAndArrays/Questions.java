@@ -81,6 +81,7 @@ public class Questions {
         System.out.println(number1 + " ile " + number2 + " sayılarının EKOK("+number1+","+number2+") = " + smallestMultiplication(number1,number2));
         System.out.println("*************************************************");
         System.out.println(number1 + " ile " + number2 + " sayılarının EKOK("+number1+","+number2+") = " + smallMultiplicationWithEBOB(number1,number2));
+
     }
 
     static int smallMultiplicationWithEBOB(int a, int b)
