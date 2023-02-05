@@ -282,6 +282,7 @@ public class Questions {
         String[][] gamerCards= new String[player][stepCards];
         int distAmount = player * stepCards;
         int gamer = 0, card = 0;
+
         if(style)
         {
             distance:
@@ -291,11 +292,11 @@ public class Questions {
                 {
                     gamerCards[gamer][card] = arr[i][j];
                     distAmount--;
-                    if(j % 4 == 3)
+                    if((j % player) == (player-1))
                     {
                         gamer = 0;
                         card++;
-                        if(card == 4)
+                        if(card == stepCards)
                         {
                             card = 0;
                         }
@@ -316,11 +317,11 @@ public class Questions {
                 {
                     gamerCards[gamer][card] = arr[i][j];
                     distAmount--;
-                    if(j % 4 == 3)
+                    if(j % stepCards == (stepCards-1))
                     {
                         card = 0;
                         gamer++;
-                        if(gamer == 4)
+                        if(gamer == player)
                         {
                             gamer = 0;
                         }
