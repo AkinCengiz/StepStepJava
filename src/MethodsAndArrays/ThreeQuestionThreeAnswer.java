@@ -37,7 +37,10 @@ public class ThreeQuestionThreeAnswer {
         kosegenDoldur(stringMatris);
         System.out.println("\n*************************************\n");
 
-
+        System.out.print("Binary moda çevirilecek sayıyı giriniz : ");
+        int binaryNumber = scanner.nextInt();
+        String binaryString = convertToBinaryFromDecimal(binaryNumber);
+        System.out.println(binaryNumber + " sayısının ikilik tabanda gösterimi : " + binaryString);
 
     }
 
@@ -137,6 +140,23 @@ public class ThreeQuestionThreeAnswer {
             }
             System.out.println();
         }
+    }
+
+    static String convertToBinaryFromDecimal(int a)
+    {
+        String binaryNumber = "";
+        if(a == 0)
+        {
+            binaryNumber = "0";
+        }
+        int mod = 0;
+        while (a > 0)
+        {
+            mod = a % 2;
+            binaryNumber = mod + binaryNumber;
+            a /= 2;
+        }
+        return binaryNumber;
     }
 
 }
