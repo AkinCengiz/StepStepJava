@@ -8,7 +8,7 @@ public class StudentTest {
 
         System.out.print("Öğrenci numarası giriniz : ");
         int no = scanner.nextInt();
-        System.out.print("Öğrenci adını giriniz :");
+        System.out.print("Öğrenci adını giriniz : ");
         String name = scanner.next();
         System.out.print("Öğrenci soyadını giriniz : ");
         String surname = scanner.next();
